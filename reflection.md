@@ -7,6 +7,9 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - What did the game look like the first time you ran it?
 - List at least two concrete bugs you noticed at the start  
   (for example: "the secret number kept changing" or "the hints were backwards").
+1) The hints are not correct
+2) When I click on New Game, the Secret changes but it doesn't let you continue playing and it says that you already won.
+3) The Submit button doesn't work the first time I press it, it only works the 2nd time.
 
 ---
 
