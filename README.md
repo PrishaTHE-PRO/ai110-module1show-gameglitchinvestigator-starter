@@ -29,9 +29,17 @@ It wrote the code, ran away, and now the game is unplayable.
 - [ ] Detail which bugs you found.
 - [ ] Explain what fixes you applied.
 
+A number-guessing game where you pick a difficulty and try to guess a secret number before running out of attempts. Simple idea — except the AI shipped it with three bugs:
+
+1. **The secret kept changing** — every click regenerated a new random number, so you could never actually win. Fixed by storing the secret in `st.session_state` so it survives reruns.
+2. **Hints were backwards** — guessing too high told you to go higher, and vice versa. Fixed the flipped messages in `check_guess`.
+3. **Couldn't start a new game after winning** — the "New Game" button reset everything *except* the game status, so the app stayed stuck on "you won." Fixed by also resetting `st.session_state.status = "playing"`.
+
+
 ## 📸 Demo
 
-- [ ] [Insert a screenshot of your fixed, winning game here]
+![Demo screenshot](Demo.png)
+
 
 ## 🚀 Stretch Features
 
