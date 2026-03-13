@@ -25,10 +25,6 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
-
 A number-guessing game where you pick a difficulty and try to guess a secret number before running out of attempts. Simple idea — except the AI shipped it with three bugs:
 
 1. **The secret kept changing** — every click regenerated a new random number, so you could never actually win. Fixed by storing the secret in `st.session_state` so it survives reruns.
